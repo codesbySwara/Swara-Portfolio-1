@@ -25,7 +25,7 @@
       </a>
 
       <!-- pure CSS hamburger menu (checkbox trick) -->
-      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu" title="Toggle navigation menu">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
       <label for="menu-toggle" class="hamburger">
         <span></span>
         <span></span>
@@ -64,10 +64,8 @@
         <a href="#contact" class="btn btn--outline">Get in Touch</a>
       </div>
 
-      <!-- desktop setup gif goes below the introduction -->
-      <div class="hero__gif">
-        <img src="assets/desktop-setup.gif" alt="My desktop setup">
-      </div>
+      <!-- 3D planet renders into this container -->
+      <div class="hero__gif" id="planet-model"></div>
     </div>
   </section>
 
@@ -266,8 +264,21 @@
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <p>&copy; 2026 Swara Kakade</p>
+    <p>Planet model: "Stylized planet" by
+      <a href="https://sketchfab.com/cmzw" target="_blank" rel="noreferrer">cmzw</a>,
+      licensed <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0</a>.
+    </p>
   </footer>
 
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="planet-model.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
