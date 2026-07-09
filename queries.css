@@ -1,0 +1,57 @@
+/* ================= TABLET (min-width: 640px) ================= */
+@media (min-width: 640px) {
+  .hero__buttons {
+    flex-direction: row;
+  }
+
+  .hero__tags {
+    flex-direction: row;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ================= DESKTOP (min-width: 900px) ================= */
+@media (min-width: 900px) {
+  .navbar__inner {
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navbar__links {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding-top: 0;
+    gap: 24px;
+  }
+
+  .navbar__links a {
+    padding: 0;
+    border-top: none;
+  }
+
+  .hero__text {
+    max-width: 560px;
+  }
+
+  .hero__gif {
+    max-width: 560px;
+  }
+}
+
+/* ================= LARGE DESKTOP (min-width: 1100px) ================= */
+@media (min-width: 1100px) {
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

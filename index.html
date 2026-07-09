@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swara Kakade - Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/webp" href="assets/logo.webp">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="queries.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#top" class="navbar__brand">
+        <img src="assets/logo.webp" alt="logo">
+        Swara Kakade
+      </a>
+
+      <!-- pure CSS hamburger menu (checkbox trick) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu" title="Toggle navigation menu">
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="navbar__links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#github">GitHub</a>
+        <a href="#publication">Research</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <div class="hero__text">
+      <h1>Swara Kakade</h1>
+      <p class="hero__role">IT Undergrad &middot; Web Developer Intern &middot; Cybersecurity Enthusiast</p>
+      <p class="hero__tagline">
+        Building at the intersection of web development, embedded systems, and security —
+        currently mapping vitals with ESP32s and shipping interfaces at NoQs.
+      </p>
+
+      <div class="hero__tags">
+        <span class="tag">Web Dev</span>
+        <span class="tag">IoT</span>
+        <span class="tag">Cybersecurity</span>
+      </div>
+
+      <div class="hero__buttons">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="#contact" class="btn btn--outline">Get in Touch</a>
+      </div>
+
+      <!-- desktop setup gif goes below the introduction -->
+      <div class="hero__gif">
+        <img src="assets/desktop-setup.gif" alt="My desktop setup">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <h2 class="section__title">About Me</h2>
+    <p class="section__sub">
+      I'm a first-year IT student who likes building things that break, and then
+      figuring out why. Right now I split my time between front-end interfaces,
+      embedded hardware, and the security side of both.
+    </p>
+
+    <div class="card">
+      <div class="card__top">
+        <h3>Web Developer Intern</h3>
+        <span class="badge">Current</span>
+      </div>
+      <p class="card__org">NoQs</p>
+      <ul>
+        <li>Building digital solutions for small businesses and MSMEs.</li>
+        <li>Working across the front-end stack, turning requirements into shipped interfaces.</li>
+      </ul>
+    </div>
+
+    <h3 class="sub-heading">Education</h3>
+    <div class="timeline">
+      <div class="timeline__item">
+        <p class="timeline__period">2025 — 2029</p>
+        <h4>All India Shri Shivaji Memorial Society IOIT, Pune</h4>
+        <p>B.Tech, Information Technology &middot; FY Sem 1 &middot; CGPA 8.1</p>
+      </div>
+      <div class="timeline__item">
+        <p class="timeline__period">Completed</p>
+        <h4>Suryadatta Public School</h4>
+        <p>HSC Board, Class 12 &middot; 74.33%</p>
+      </div>
+      <div class="timeline__item">
+        <p class="timeline__period">Completed</p>
+        <h4>New India School</h4>
+        <p>SSC Board, Class 10 &middot; 96.20%</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills">
+    <h2 class="section__title">Toolkit</h2>
+    <p class="section__sub">Languages, hardware, and tools I've worked with.</p>
+
+    <div class="skills-grid">
+      <div class="skill-box">
+        <h3>Programming &amp; Development</h3>
+        <div class="chips">
+          <span class="chip">C</span>
+          <span class="chip">C++</span>
+          <span class="chip">Python</span>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">PHP</span>
+          <span class="chip">VS Code</span>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <h3>Hardware &amp; IoT</h3>
+        <div class="chips">
+          <span class="chip">ESP32</span>
+          <span class="chip">Arduino IDE</span>
+          <span class="chip">Pulse / SpO2 / Temp Sensors</span>
+          <span class="chip">Laravel</span>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <h3>Tools &amp; Platforms</h3>
+        <div class="chips">
+          <span class="chip">Git &amp; GitHub</span>
+          <span class="chip">VS Code</span>
+          <span class="chip">Arduino IDE</span>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <h3>Concepts</h3>
+        <div class="chips">
+          <span class="chip">OOP</span>
+          <span class="chip">Embedded Systems Basics</span>
+          <span class="chip">Real-Time Data Monitoring</span>
+          <span class="chip">IoT Architecture</span>
+          <span class="chip">Phishing Simulation</span>
+          <span class="chip">Social Engineering Awareness</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <h2 class="section__title">Projects</h2>
+    <p class="section__sub">A couple of things I've built so far.</p>
+
+    <div class="project-grid">
+      <div class="card">
+        <div class="card__top">
+          <span class="badge">IoT / Embedded</span>
+          <span class="card__period">Mar 2026 — May 2026</span>
+        </div>
+        <h3>IoT-Based Remote Patient Monitoring System</h3>
+        <ul>
+          <li>Developed a real-time patient monitoring system using an ESP32 microcontroller integrated with vital-sign sensors to track heart rate, SpO2, and body temperature remotely.</li>
+          <li>Implemented wireless data transmission over Wi-Fi to stream live patient vitals to a dashboard, enabling remote access for doctors and caregivers.</li>
+          <li>Built an automated alert system that triggers notifications when readings cross critical thresholds.</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">ESP32</span>
+          <span class="chip">Sensors</span>
+          <span class="chip">Wi-Fi</span>
+          <span class="chip">Arduino IDE</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__top">
+          <span class="badge">Security</span>
+          <span class="card__period">Jan 2026 — Feb 2026</span>
+        </div>
+        <h3>Phishing Awareness Simulation</h3>
+        <ul>
+          <li>Built a simulated phishing web page using Laravel to demonstrate how phishing attacks deceive users into entering credentials.</li>
+          <li>Designed the project as an educational awareness tool to help users identify red flags in suspicious emails and websites.</li>
+          <li>Documented the attack flow and presented findings to faculty.</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">Laravel</span>
+          <span class="chip">PHP</span>
+          <span class="chip">HTML/CSS</span>
+        </div>
+        <a href="https://github.com/codesBySwara" target="_blank" rel="noreferrer" class="card__link">View on GitHub →</a>
+      </div>
+    </div>
+
+    <div class="card card--dashed">
+      <span class="badge">Hackathon Proposal &middot; Sem 1 &middot; TENET Hackathon</span>
+      <h3>ExamPrep Bot: AI-Powered Exam Preparation System</h3>
+      <ul>
+        <li>Proposed an AI study assistant using a RAG (Retrieval Augmented Generation) pipeline that converts notes, slides, and past papers into vector embeddings for intelligent retrieval.</li>
+        <li>Designed the system to match student queries against relevant document segments and generate context-aware answers via an LLM.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== GITHUB (LIVE DATA) ===== -->
+  <section class="section" id="github">
+    <h2 class="section__title">Live from GitHub</h2>
+    <p class="section__sub">My most recently updated public repos, pulled straight from the GitHub API.</p>
+
+    <div id="github-status" class="github-status">Loading repos...</div>
+    <div id="github-list" class="project-grid"></div>
+  </section>
+
+  <!-- ===== PUBLICATION ===== -->
+  <section class="section" id="publication">
+    <h2 class="section__title">Research</h2>
+    <div class="card">
+      <h3>IoT-Based Remote Patient Monitoring System</h3>
+      <p class="card__org">International Conference on Emerging Technologies in Engineering (ICETE 2026)</p>
+      <ul>
+        <li>Lead author and presenter of a research paper on real-time remote patient monitoring using ESP32 and IoT sensors, at an international conference.</li>
+        <li>Co-authored with 4 classmates, guided by Prof. Amol More.</li>
+      </ul>
+    </div>
+
+    <h3 class="sub-heading">Certifications &amp; Training</h3>
+    <ul class="achievement-list">
+      <li><span>Infosys Springboard</span><span class="mono">C Programming, Python</span></li>
+      <li><span>E-Cell IIT Madras</span><span class="mono">Cyber Security &amp; Ethical Hacking</span></li>
+      <li><span>deAsra</span><span class="mono">Work Ready Skills</span></li>
+      <li><span>NPTEL</span><span class="mono">Soft Skills</span></li>
+    </ul>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <h2 class="section__title">Contact</h2>
+    <p class="section__sub">I'm quickest over email — usually reply within a day.</p>
+    <div class="hero__buttons">
+      <a href="mailto:swaravk23@gmail.com" class="btn btn--primary">swaravk23@gmail.com</a>
+      <a href="tel:+919822556095" class="btn btn--outline">+91 9822556095</a>
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/codesBySwara" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://linkedin.com/in/swara-kakade" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>&copy; 2026 Swara Kakade</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
